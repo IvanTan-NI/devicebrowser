@@ -63,7 +63,6 @@ public partial class MainWindow : Window
         ClearDetails();
         DetailsPanel.Visibility = Visibility.Collapsed;
         InitialInstructionText.Visibility = Visibility.Collapsed;
-        HideError();
         LoadingPanel.Visibility = Visibility.Visible;
     }
 
@@ -77,7 +76,6 @@ public partial class MainWindow : Window
 
         InitialInstructionText.Visibility = Visibility.Collapsed;
         DetailsPanel.Visibility = Visibility.Visible;
-        HideError();
     }
 
     private void ShowError(string message)
@@ -109,4 +107,3 @@ public partial class MainWindow : Window
         LoadingPanel.Visibility = Visibility.Collapsed;
     }
 }
-
